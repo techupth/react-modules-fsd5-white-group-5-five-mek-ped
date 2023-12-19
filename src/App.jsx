@@ -1,28 +1,6 @@
 import "./App.css";
-
-function Header() {
-  return (
-    <header>
-      <nav>
-        <div className="logo">🚀 XYZ CORP</div>
-        <ul className="nav-list">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  );
-}
+import { Header } from "./components";
+import Button from "./components/common/button";
 
 function MainContent() {
   return (
@@ -177,10 +155,6 @@ function FAQ() {
       </ul>
     </section>
   );
-}
-
-function Button(props) {
-  return <button className={props.buttonStyle}>{props.buttonText}</button>;
 }
 
 function App() {
